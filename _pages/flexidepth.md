@@ -28,6 +28,15 @@ permalink: /flexidepth/
     .publication-authors {
       font-family: 'Google Sans', sans-serif;
     }
+    .container.is-max-desktop {
+      max-width: 1152px; /* 960px * 1.2 = 1152px */
+    }
+    .content p {
+      font-size: 1.15rem;
+    }
+    figcaption {
+      font-size: 0.9rem !important; /* Smaller than is-size-6 */
+    }
   </style>
 </head>
 <body>
@@ -127,7 +136,7 @@ permalink: /flexidepth/
         </div>
         <figure>
           <img src="/images/flexidepth/fig1.png" alt="Layer-skipping patterns">
-          <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+          <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
             Layer-skipping patterns (Llama-3-8B-Instruct) for a language task (left) and a math task (right). The light-to-dark blue gradient represents layer usage from 16 to 32.
           </figcaption>
         </figure>
@@ -150,7 +159,7 @@ permalink: /flexidepth/
         </div>
         <figure>
           <img src="/images/flexidepth/fig2.png" alt="FlexiDepth Architecture" style="width: 50%;">
-          <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+          <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
             The FlexiDepth layer. Left: Full-processing path where hidden states undergo the pre-trained attention and FFN modules. Right: Skipping path where hidden states bypass the attention module and are processed by a lightweight adapter. The router and adapter (in red) are the only trainable components within the FlexiDepth Block.
           </figcaption>
         </figure>
@@ -179,7 +188,7 @@ permalink: /flexidepth/
             </figure>
           </div>
         </div>
-        <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+        <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
           Percentage of tokens processed by transformer layers 17 to 32. The x-axis represents the layer index, and the y-axis represents the percentage of tokens processed by the layer.
         </figcaption>
         <div class="content has-text-justified" style="margin-top: 2rem;">
@@ -189,7 +198,7 @@ permalink: /flexidepth/
         </div>
         <figure>
           <img src="/images/flexidepth/fig5.png" alt="Influence of Alpha for Layer Skipping" style="width: 70%;">
-          <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+          <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
             The influence of the coefficient α for layer skipping
           </figcaption>
         </figure>
