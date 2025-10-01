@@ -19,7 +19,37 @@
 }
 
 .pub-item {
+  position: relative;
   margin-bottom: 1.5rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  z-index: 20;
+  max-width: 720px;
+  background: #ffffff;
+  color: #222;
+  border: 1px solid #d7d9dd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip:focus-within .tooltip-content {
+  visibility: visible;
+  opacity: 1;
 }
 
 .pub-title {
