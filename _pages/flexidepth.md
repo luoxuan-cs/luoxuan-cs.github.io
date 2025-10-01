@@ -182,6 +182,17 @@ permalink: /flexidepth/
         <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
           Percentage of tokens processed by transformer layers 17 to 32. The x-axis represents the layer index, and the y-axis represents the percentage of tokens processed by the layer.
         </figcaption>
+        <div class="content has-text-justified" style="margin-top: 2rem;">
+          <p>
+            Furthermore, we evaluated the performance of FlexiDepth with varying layer-skipping penalty coefficients (alpha). A larger alpha value encourages the model to skip more layers. This trade-off between skipping layers and maintaining performance is illustrated in the following figure.
+          </p>
+        </div>
+        <figure>
+          <img src="/images/flexidepth/fig5.png" alt="Influence of Alpha for Layer Skipping" style="width: 70%;">
+          <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+            The influence of the coefficient α for layer skipping
+          </figcaption>
+        </figure>
       </div>
     </div>
     <!--/ Results. -->
