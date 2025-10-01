@@ -128,22 +128,6 @@ permalink: /flexidepth/
       </div>
     </div>
     <!--/ Image. -->
-
-    <!-- Main idea -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">main idea</h2>
-        <div class="content has-text-justified">
-          <p>
-            The computational demands to generate different tokens is inherently different. The uniform computation allocation of the vanilla transformer have redundant layers, and we can skip many of them without hurt the overall performance. Here is an example
-          </p>
-        </div>
-        <figure>
-          <img src="{{ "/assets/images/flexidepth-main-idea.png" | relative_url }}" alt="Main idea example">
-        </figure>
-      </div>
-    </div>
-    <!--/ Main idea. -->
   </div>
 </section>
 
