@@ -157,6 +157,34 @@ permalink: /flexidepth/
       </div>
     </div>
     <!--/ Architecture. -->
+
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We experimented on different tasks and observed a "bowl-like" pattern in layer usage, where earlier and later layers are utilized more, while middle layers are used less. We also found differences across tasks: "continue writing" tasks utilize more layers than "summarization" and "copy" tasks, and "product" tasks use more layers than "addition" and "repetition" tasks.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <figure>
+              <img src="/images/flexidepth/fig4l.png" alt="Layer Usage Patterns Left" style="width: 100%;">
+            </figure>
+          </div>
+          <div class="column is-half">
+            <figure>
+              <img src="/images/flexidepth/fig4r.png" alt="Layer Usage Patterns Right" style="width: 100%;">
+            </figure>
+          </div>
+        </div>
+        <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+          Percentage of tokens processed by transformer layers 17 to 32. The x-axis represents the layer index, and the y-axis represents the percentage of tokens processed by the layer.
+        </figcaption>
+      </div>
+    </div>
+    <!--/ Results. -->
   </div>
 </section>
 
