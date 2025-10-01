@@ -34,4 +34,19 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
       <a class="btn-tag" href="/publication/2025-flexidepth">WEBSITE</a>
     </div>
   </div>
+  <div class="pub-item">
+    <div class="pub-title"><a href="/publication/2025-diffskip">DiffSkip: Differential Layer Skipping in Large Language Models</a></div>
+    <div class="pub-authors">Xuan Luo, Weizhi Wang, Xifeng Yan</div>
+    <div class="pub-venue">Findings of the Association for Computational Linguistics, 2025</div>
+    <div class="pub-buttons">
+      <span class="btn-popover">
+        <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
+        <div class="popover">
+          Existing Large Language Models (LLMs) enforce uniform computation across all tokens. We analyze the correlation between the input-output difference of self-attention block and Feed-Forward Network (FFN) within the same transformer layer, and find that these two differential vectors are highly correlated. Thus, we propose to dynamically skip the FFN blocks based on the self-attention difference and introduce Diffential Layer Skipping (DiffSkip) to show that LLMs are inherently dynamic-depth models, capable of adjusting computational depth when generating different tokens. DiffSkip employs a lightweight router module to dynamically skip a set of FFN blocks in LLMs and only requires efficient fine-tuning while keeping the whole LLM frozen. Experimental results demonstrate that DiffSkip effectively enables dynamic FFN skipping in decoder-only language models, even in continuous token generation tasks where many layer-skipping methods struggle.
+        </div>
+      </span>
+      <a class="btn-tag" href="https://aclanthology.org/2025.findings-acl.377.pdf">PDF</a>
+      <a class="btn-tag" href="https://huggingface.co/xuan-luo/DiffSkip-Llama-3-8B-Instruct">CODE</a>
+    </div>
+  </div>
 </div>
