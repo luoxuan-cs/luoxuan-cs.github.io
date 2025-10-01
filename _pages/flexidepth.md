@@ -145,11 +145,11 @@ permalink: /flexidepth/
           </p>
           <ul>
             <li>A router to make layer-skipping decisions.</li>
-            <li>An adapter to align the representation of the skipped hidden states and the ones that undergo full processing.</li>
+            <li>An adapter to align skipped hidden states and the processed hidden states.</li>
           </ul>
         </div>
         <figure>
-          <img src="/images/flexidepth/fig2.png" alt="FlexiDepth Architecture">
+          <img src="/images/flexidepth/fig2.png" alt="FlexiDepth Architecture" style="width: 50%;">
           <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
             FlexiDepth Architecture Overview
           </figcaption>
