@@ -82,4 +82,19 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
       <a class="btn-tag" href="https://github.com/luoxuan-cs/PAMA">CODE</a>
     </div>
   </div>
+  <div class="pub-item">
+    <div class="pub-title">Computer Science Diagram Understanding with Topology Parsing</div>
+    <div class="pub-authors">Shaowei Wang, Lingling Zhang, Xuan Luo, Yi Yang, Xin Hu, Tao Qin, Jun Liu</div>
+    <div class="pub-venue">ACM Transactions on Knowledge Discovery from Data, 2022</div>
+    <div class="pub-buttons">
+      <span class="btn-popover">
+        <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
+        <div class="popover">
+          Diagram is a special form of visual expression for representing complex concepts, logic, and knowledge, which widely appears in educational scenes such as textbooks, blogs, and encyclopedias. Current research on diagrams preliminarily focuses on natural disciplines such as Biology and Geography, whose expressions are still similar to natural images. In this article, we construct the first novel geometric type of diagrams dataset in Computer Science field, which has more abstract expressions and complex logical relations. The dataset has exhaustive annotations of objects and relations for about 1,300 diagrams and 3,500 question-answer pairs. We introduce the tasks of diagram classification (DC) and diagram question answering (DQA) based on the new dataset, and propose the Diagram Paring Net (DPN) that focuses on analyzing the topological structure and text information of diagrams. We use DPN-based models to solve DC and DQA tasks, and compare the performances to well-known natural images classification models and visual question answering models. Our experiments show the effectiveness of the proposed DPN-based models on diagram understanding tasks, also indicate that our dataset is more complex compared to previous natural image understanding datasets. The presented dataset opens new challenges for research in diagram understanding, and the DPN method provides a novel perspective for studying such data. Our dataset can be available from https://github.com/WayneWong97/CSDia.
+        </div>
+      </span>
+      <a class="btn-tag" href="https://dl.acm.org/doi/pdf/10.1145/3522689">PDF</a>
+      <a class="btn-tag" href="https://github.com/WayneWong97/CSDia">CODE</a>
+    </div>
+  </div>
 </div>
