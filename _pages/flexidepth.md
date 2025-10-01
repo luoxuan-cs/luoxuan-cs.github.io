@@ -122,7 +122,7 @@ permalink: /flexidepth/
         <h2 class="title is-3">Main Idea</h2>
         <div class="content has-text-justified">
           <p>
-            <strong>The computational demand varies when generating different tokens. Many transformer layers of pre-trained LLMs can be skipped without compromising performance. Below is an example of FlexiDepth demonstrating that many tokens utilize only a few layers.</strong>
+            <strong>The computational demand varies when generating different tokens.</strong> Many transformer layers of pre-trained LLMs can be skipped without compromising performance. Below is an example of FlexiDepth demonstrating that many tokens utilize only a few layers.
           </p>
         </div>
         <figure>
@@ -134,6 +134,29 @@ permalink: /flexidepth/
       </div>
     </div>
     <!--/ Main Idea. -->
+
+    <!-- Architecture. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our architecture consists of:
+          </p>
+          <ul>
+            <li>A router to make layer-skipping decisions.</li>
+            <li>An adapter to align the representation of the skipped hidden states and the ones that undergo full processing.</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="/images/flexidepth/fig2.png" alt="FlexiDepth Architecture">
+          <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+            FlexiDepth Architecture Overview
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--/ Architecture. -->
   </div>
 </section>
 
