@@ -119,7 +119,7 @@ permalink: /flexidepth/
     <!-- Image -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <figure>
+        <figure id="patterns-figure">
           <img src="{{ "/assets/images/flexidepth-patterns.png" | relative_url }}" alt="Layer-skipping patterns">
           <figcaption class="has-text-centered is-size-5 has-text-weight-medium" style="margin-top: 1rem;">
             Layer-skipping patterns (Llama-3-8B-Instruct) for a language task (left) and a math task (right). The light-to-dark blue gradient represents layer usage from 16 to 32.
@@ -128,6 +128,21 @@ permalink: /flexidepth/
       </div>
     </div>
     <!--/ Image. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Main Idea</h2>
+        <div class="content">
+          <p>
+            The computational demands to generate different tokens is inherently different. The uniform computation allocation of the vanilla transformer have redundant layers, and we can skip many of them without hurt the overall performance. Here is an example <a href="#patterns-figure">the figure</a>.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
