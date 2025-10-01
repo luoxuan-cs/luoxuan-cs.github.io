@@ -115,6 +115,19 @@ permalink: /flexidepth/
       </div>
     </div>
     <!--/ Abstract. -->
+
+    <!-- Image -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure>
+          <img src="/assets/images/flexidepth-patterns.png" alt="Layer-skipping patterns">
+          <figcaption class="has-text-centered" style="margin-top: 1rem;">
+            Layer-skipping patterns (Llama-3-8B-Instruct) for a language task (left) and a math task (right). The light-to-dark blue gradient represents layer usage from 16 to 32.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--/ Image. -->
   </div>
 </section>
 
