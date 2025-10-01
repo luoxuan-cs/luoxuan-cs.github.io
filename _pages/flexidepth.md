@@ -122,7 +122,7 @@ permalink: /flexidepth/
         <h2 class="title is-3">Main Idea</h2>
         <div class="content has-text-justified">
           <p>
-            the computation demand varies to generate different tokens.. Many of the transformer layers of the pre-trained LLM can be skipped without hurt the performance. Here is an example
+            <strong>The computational demand varies when generating different tokens. Many transformer layers of pre-trained LLMs can be skipped without compromising performance. Below is an example of FlexiDepth demonstrating that many tokens utilize only a few layers.</strong>
           </p>
         </div>
         <figure>
