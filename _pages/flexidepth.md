@@ -4,7 +4,6 @@ title: "Adaptive Layer-skipping in Pre-trained LLMs"
 permalink: /flexidepth/
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
