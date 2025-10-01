@@ -1,100 +1,122 @@
 ---
-layout: single
+layout: default
 title: "Adaptive Layer-skipping in Pre-trained LLMs"
 permalink: /flexidepth/
-author_profile: false
 ---
 
-<style>
-.project-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.project-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  line-height: 1.3;
-}
-.authors {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-.authors a {
-  color: #2c5aa0;
-  text-decoration: none;
-}
-.authors a:hover {
-  text-decoration: underline;
-}
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
-.project-btn {
-  display: inline-block;
-  padding: 10px 24px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff !important;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-}
-.project-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-.section {
-  margin: 2.5rem 0;
-}
-.section-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #e3e5e8;
-  padding-bottom: 0.5rem;
-}
-.abstract-text {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  text-align: justify;
-  color: #333;
-}
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="FlexiDepth: Adaptive Layer-skipping in Pre-trained LLMs">
+  <meta name="keywords" content="Large Language Models, Layer Skipping, Efficient Inference">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adaptive Layer-skipping in Pre-trained LLMs</title>
 
-<div class="project-page">
-  <h1 class="project-title">Adaptive Layer-skipping in Pre-trained LLMs</h1>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   
-  <div class="authors">
-    <a href="https://luoxuan-cs.github.io/">Xuan Luo</a><sup>1</sup>,
-    <a href="https://victorwz.github.io/">Weizhi Wang</a><sup>1</sup>,
-    <a href="https://sites.cs.ucsb.edu/~xyan/">Xifeng Yan</a><sup>1</sup>
-    <br>
-    <sup>1</sup>University of California, Santa Barbara
-  </div>
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+    }
+    .publication-title {
+      font-family: 'Google Sans', sans-serif;
+    }
+    .publication-authors {
+      font-family: 'Google Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
 
-  <div class="btn-container">
-    <a class="project-btn" href="https://arxiv.org/abs/2503.23798">📄 Paper</a>
-    <a class="project-btn" href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct">💻 Code</a>
-    <a class="project-btn" href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct">🤖 Model</a>
-    <a class="project-btn" href="https://huggingface.co/datasets/xuan-luo/FlexiPatterns-Llama-3-8B-Instruct">📊 Dataset</a>
-  </div>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Adaptive Layer-skipping in Pre-trained LLMs</h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://luoxuan-cs.github.io/">Xuan Luo</a><sup>1</sup>,&nbsp;&nbsp;
+            </span> 
+            <span class="author-block">
+              <a href="https://victorwz.github.io/">Weizhi Wang</a><sup>1</sup>,&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://sites.cs.ucsb.edu/~xyan/">Xifeng Yan</a><sup>1</sup>&nbsp;&nbsp;
+            </span>
+          </div>
 
-  <div class="section">
-    <h2 class="section-title">Abstract</h2>
-    <p class="abstract-text">
-      Various layer-skipping methods have been proposed to accelerate token generation in large language models (LLMs). However, they have overlooked a fundamental question: How do computational demands vary across the generation of different tokens? In this work, we introduce FlexiDepth, a method that dynamically adjusts the number of Transformer layers used in text generation. By incorporating a plug-in router and adapter, FlexiDepth enables adaptive layer-skipping in LLMs without modifying their original parameters. Introducing FlexiDepth to Llama-3-8B model achieves layer skipping of 8 layers out of 32, and meanwhile maintains the full 100% benchmark performance. Experimental results with FlexiDepth demonstrate that computational demands in LLMs significantly vary based on token type. Specifically, generating repetitive tokens or fixed phrases requires fewer layers, whereas producing tokens involving computation or high uncertainty requires more layers. Interestingly, this adaptive allocation pattern aligns with human intuition. To advance research in this area, we open sourced FlexiDepth and a dataset documenting FlexiDepth's layer allocation patterns for future exploration.
-    </p>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of California, Santa Barbara</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.23798" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Model Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    🤗
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/xuan-luo/FlexiPatterns-Llama-3-8B-Instruct" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    🤗
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div> 
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Various layer-skipping methods have been proposed to accelerate token generation in large language models (LLMs). However, they have overlooked a fundamental question: How do computational demands vary across the generation of different tokens? In this work, we introduce FlexiDepth, a method that dynamically adjusts the number of Transformer layers used in text generation. By incorporating a plug-in router and adapter, FlexiDepth enables adaptive layer-skipping in LLMs without modifying their original parameters. Introducing FlexiDepth to Llama-3-8B model achieves layer skipping of 8 layers out of 32, and meanwhile maintains the full 100% benchmark performance. Experimental results with FlexiDepth demonstrate that computational demands in LLMs significantly vary based on token type. Specifically, generating repetitive tokens or fixed phrases requires fewer layers, whereas producing tokens involving computation or high uncertainty requires more layers. Interestingly, this adaptive allocation pattern aligns with human intuition. To advance research in this area, we open sourced FlexiDepth and a dataset documenting FlexiDepth's layer allocation patterns for future exploration.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+</body>
+</html> 
