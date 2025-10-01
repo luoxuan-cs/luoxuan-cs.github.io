@@ -103,6 +103,25 @@ permalink: /flexidepth/
 
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Main Idea. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Main Idea</h2>
+        <div class="content has-text-justified">
+          <p>
+            The computation demand varies to generate different tokens. Many of the transformer layers of the pre-trained LLM can be skipped without hurting performance. Here is an example:
+          </p>
+          <figure style="margin-top: 1.5rem;">
+            <img src="/images/flexidepth/fig1.png" alt="Layer-skipping patterns">
+            <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
+              Layer-skipping patterns (Llama-3-8B-Instruct) for a language task (left) and a math task (right). The light-to-dark blue gradient represents layer usage from 16 to 32.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!--/ Main Idea. -->
+
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -115,18 +134,6 @@ permalink: /flexidepth/
       </div>
     </div>
     <!--/ Abstract. -->
-    <!-- Image -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <figure>
-          <img src="/images/flexidepth/fig1.png" alt="Layer-skipping patterns">
-          <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
-            Layer-skipping patterns (Llama-3-8B-Instruct) for a language task (left) and a math task (right). The light-to-dark blue gradient represents layer usage from 16 to 32.
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-    <!--/ Image. -->
   </div>
 </section>
 
