@@ -12,13 +12,13 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
 - huggingface: https://huggingface.co/xuan-luo
 - google scholar: https://scholar.google.com/citations?user=z5pKzAcAAAAJ&hl
 
-## Selected publications
+<h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Selected publications</h2>
 
 <div class="pubs">
   <div class="pub-year">2025</div>
   <div class="pub-item">
     <div class="pub-title"><a href="/publication/2025-flexidepth">Adaptive Layer-skipping in Pre-trained LLMs</a></div>
-    <div class="pub-authors">Xuan Luo, Weizhi Wang, Xifeng Yan</div>
+    <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">The Conference on Language Modeling, 2025</div>
     <div class="pub-oral">Oral Presentation</div>
     <div class="pub-buttons">
@@ -36,7 +36,7 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
   </div>
   <div class="pub-item">
     <div class="pub-title">DiffSkip: Differential Layer Skipping in Large Language Models</div>
-    <div class="pub-authors">Xuan Luo, Weizhi Wang, Xifeng Yan</div>
+    <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">Findings of the Association for Computational Linguistics, 2025</div>
     <div class="pub-buttons">
       <span class="btn-popover">
@@ -52,7 +52,7 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
   <div class="pub-year">2024</div>
   <div class="pub-item">
     <div class="pub-title">Bot or human? detecting chatgpt imposters with a single question</div>
-    <div class="pub-authors">Hong Wang, Xuan Luo, Weizhi Wang, Xifeng Yan</div>
+    <div class="pub-authors">Hong Wang, <strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">The Conference on Language Modeling, 2024</div>
     <div class="pub-buttons">
       <span class="btn-popover">
@@ -69,7 +69,7 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
   <div class="pub-year">2022</div>
   <div class="pub-item">
     <div class="pub-title">Progressive attentional manifold alignment for arbitrary style transfer</div>
-    <div class="pub-authors">Xuan Luo, Zhen Han, Linkang Yang</div>
+    <div class="pub-authors"><strong>Xuan Luo</strong>, Zhen Han, Linkang Yang</div>
     <div class="pub-venue">Proceedings of the Asian Conference on Computer Vision, 2022</div>
     <div class="pub-buttons">
       <span class="btn-popover">
@@ -84,7 +84,7 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
   </div>
   <div class="pub-item">
     <div class="pub-title">Computer Science Diagram Understanding with Topology Parsing</div>
-    <div class="pub-authors">Shaowei Wang, Lingling Zhang, Xuan Luo, Yi Yang, Xin Hu, Tao Qin, Jun Liu</div>
+    <div class="pub-authors">Shaowei Wang, Lingling Zhang, <strong>Xuan Luo</strong>, Yi Yang, Xin Hu, Tao Qin, Jun Liu</div>
     <div class="pub-venue">ACM Transactions on Knowledge Discovery from Data, 2022</div>
     <div class="pub-buttons">
       <span class="btn-popover">
