@@ -12,7 +12,7 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
 - huggingface: https://huggingface.co/xuan-luo
 - google scholar: https://scholar.google.com/citations?user=z5pKzAcAAAAJ&hl
 
-<h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem;">Selected publications</h2>
+## Selected publications
 
 <div class="pubs">
   <div class="pub-year">2025</div>

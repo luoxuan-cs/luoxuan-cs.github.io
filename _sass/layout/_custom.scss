@@ -6,19 +6,24 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 1.2rem 0 1rem 0;
+  margin: 1.2rem 0 0.8rem 0;
   color: #8a8f98;
   font-size: 1.4rem;
   font-weight: 600;
 }
 .pub-year:first-child {
-  margin-top: 0.8rem;
+  margin-top: 0;
 }
 .pub-year::before {
   content: "";
   flex: 1;
   height: 1px;
   background: #e3e5e8;
+}
+
+.page__content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .pub-item {
@@ -42,10 +47,6 @@
 .pub-authors {
   color: #444;
   margin-bottom: 0.35rem;
-}
-.pub-authors strong {
-  font-weight: 700;
-  color: #222;
 }
 
 .pub-venue {
