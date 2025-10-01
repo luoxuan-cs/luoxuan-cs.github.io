@@ -139,6 +139,9 @@ permalink: /flexidepth/
           <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
             Layer-skipping patterns (Llama-3-8B-Instruct) for a language task (left) and a math task (right). The light-to-dark blue gradient represents layer usage from 16 to 32.
           </figcaption>
+          <p class="has-text-centered" style="margin-top: 0.5rem;">
+            For more results about the layer skipping pattern of different tokens, please refer to <a href="https://huggingface.co/datasets/xuan-luo/FlexiPatterns-Llama-3-8B-Instruct">flexipatterns</a>
+          </p>
         </figure>
       </div>
     </div>
