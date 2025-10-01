@@ -13,7 +13,7 @@ I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.e
 <div class="pubs">
   <div class="pub-year">2025</div>
   <div class="pub-item">
-    <div class="pub-title"><a href="/publication/2025-flexidepth">Adaptive Layer-skipping in Pre-trained LLMs</a></div>
+    <div class="pub-title"><a href="/flexidepth/">Adaptive Layer-skipping in Pre-trained LLMs</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">The Conference on Language Modeling, 2025</div>
     <div class="pub-oral">Oral Presentation</div>
@@ -27,7 +27,7 @@ I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.e
       <a class="btn-tag" href="https://arxiv.org/abs/2503.23798">PDF</a>
       <a class="btn-tag" href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct">CODE</a>
       <a class="btn-tag" href="https://huggingface.co/datasets/xuan-luo/FlexiPatterns-Llama-3-8B-Instruct">DATASET</a>
-      <a class="btn-tag" href="/publication/2025-flexidepth">WEBSITE</a>
+      <a class="btn-tag" href="/flexidepth/">WEBSITE</a>
     </div>
   </div>
   <div class="pub-item">
