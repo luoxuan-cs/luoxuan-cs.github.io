@@ -49,4 +49,21 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
       <a class="btn-tag" href="https://huggingface.co/xuan-luo/DiffSkip-Llama-3-8B-Instruct">CODE</a>
     </div>
   </div>
+  <div class="pub-year">2024</div>
+  <div class="pub-item">
+    <div class="pub-title">Bot or human? detecting chatgpt imposters with a single question</div>
+    <div class="pub-authors">Hong Wang, Xuan Luo, Weizhi Wang, Xifeng Yan</div>
+    <div class="pub-venue">The Conference on Language Modeling, 2024</div>
+    <div class="pub-buttons">
+      <span class="btn-popover">
+        <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
+        <div class="popover">
+          Large language models (LLMs) like GPT-4 have recently demonstrated impressive capabilities in natural language understanding and generation. However, there is a concern that they can be misused for malicious purposes, such as fraud or denial-of-service attacks. Therefore, it is crucial to develop methods for detecting whether the party involved in a conversation is a bot or a human. In this paper, we propose a framework named FLAIR, Finding Large Language Model Authenticity via a Single Inquiry and Response, to detect conversational bots in an online manner. Specifically, we target a single question scenario that can effectively differentiate human users from bots. The questions are divided into two categories: those that are easy for humans but difficult for bots (e.g., counting, substitution, searching, and ASCII art reasoning), and those that are easy for bots but difficult for humans (e.g., memorization and computation). Our approach shows different strengths of these questions in their effectiveness, providing a new way for online service providers to protect themselves against nefarious activities. Our code and question set are available at https://github.com/hongwang600/FLAIR.
+        </div>
+      </span>
+      <a class="btn-tag" href="https://arxiv.org/pdf/2305.06424">PDF</a>
+      <a class="btn-tag" href="https://github.com/hongwang600/FLAIR">CODE</a>
+      <a class="btn-tag" href="https://drive.google.com/file/d/1acLoe-2od8xVFsHOj2fiKipDGH8k3Htj/view">DATASET</a>
+    </div>
+  </div>
 </div>
