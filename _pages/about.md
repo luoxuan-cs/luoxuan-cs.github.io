@@ -66,4 +66,20 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
       <a class="btn-tag" href="https://drive.google.com/file/d/1acLoe-2od8xVFsHOj2fiKipDGH8k3Htj/view">DATASET</a>
     </div>
   </div>
+  <div class="pub-year">2022</div>
+  <div class="pub-item">
+    <div class="pub-title">Progressive attentional manifold alignment for arbitrary style transfer</div>
+    <div class="pub-authors">Xuan Luo, Zhen Han, Linkang Yang</div>
+    <div class="pub-venue">Proceedings of the Asian Conference on Computer Vision, 2022</div>
+    <div class="pub-buttons">
+      <span class="btn-popover">
+        <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
+        <div class="popover">
+          Arbitrary style transfer algorithms can generate stylization results with arbitrary content-style image pairs but will distort content structures and bring degraded style patterns. The content distortion problem has been well issued using high-frequency signals, salient maps, and low-level features. However, the style degradation problem is still unsolved. Since there is a considerable semantic discrepancy between content and style features, we assume they follow two different manifold distributions. The style degradation happens because existing methods cannot fully leverage the style statistics to render the content feature that lies on a different manifold. Therefore we designed the progressive attentional manifold alignment (PAMA) to align the content manifold to the style manifold. This module consists of a channel alignment module to emphasize related content and style semantics, an attention module to establish the correspondence between features, and a spatial interpolation module to adaptively align the manifolds. The proposed PAMA can alleviate the style degradation problem and produce state-of-the-art stylization results.
+        </div>
+      </span>
+      <a class="btn-tag" href="https://openaccess.thecvf.com/content/ACCV2022/papers/Luo_Progressive_Attentional_Manifold_Alignment_for_Arbitrary_Style_Transfer_ACCV_2022_paper.pdf">PDF</a>
+      <a class="btn-tag" href="https://github.com/luoxuan-cs/PAMA">CODE</a>
+    </div>
+  </div>
 </div>
