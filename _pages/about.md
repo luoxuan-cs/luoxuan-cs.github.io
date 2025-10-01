@@ -4,13 +4,9 @@ title: "Xuan Luo (罗炫)"
 author_profile: true
 ---
 
-Xuan Luo (罗炫)
+**Email**: xuan_luo AT ucsb DOT edu
 
-I am a PhD student at UC Santa Barbara. My current research is mainly about efficient large language models and applications of generative models.
-
-- github: https://github.com/luoxuan-cs
-- huggingface: https://huggingface.co/xuan-luo
-- google scholar: https://scholar.google.com/citations?user=z5pKzAcAAAAJ&hl
+I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/) in University of California Santa Barbara. My current research is mainly about efficient large language models and applications of generative models.
 
 ## Selected publications
 
