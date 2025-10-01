@@ -19,37 +19,7 @@
 }
 
 .pub-item {
-  position: relative;
   margin-bottom: 1.5rem;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-.tooltip .tooltip-content {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-  position: absolute;
-  left: 0;
-  top: calc(100% + 6px);
-  z-index: 20;
-  max-width: 720px;
-  background: #ffffff;
-  color: #222;
-  border: 1px solid #d7d9dd;
-  border-radius: 8px;
-  padding: 10px 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-.tooltip:hover .tooltip-content {
-  visibility: visible;
-  opacity: 1;
-}
-.tooltip:focus-within .tooltip-content {
-  visibility: visible;
-  opacity: 1;
 }
 
 .pub-title {
@@ -102,4 +72,30 @@
 .btn-tag:hover {
   background: #efeff2;
   border-color: #c9ccd2;
+} 
+
+.btn-popover {
+  position: relative;
+  display: inline-block;
+}
+.btn-popover .popover {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  width: min(720px, 80vw);
+  max-width: 720px;
+  max-height: 60vh;
+  overflow: auto;
+  padding: 10px 12px;
+  background: #fff;
+  color: #222;
+  border: 1px solid #d7d9dd;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+.btn-popover:hover .popover,
+.btn-popover:focus-within .popover {
+  display: block;
 } 
