@@ -151,7 +151,7 @@ permalink: /flexidepth/
         <figure>
           <img src="/images/flexidepth/fig2.png" alt="FlexiDepth Architecture" style="width: 50%;">
           <figcaption class="has-text-centered is-size-5" style="margin-top: 1rem;">
-            FlexiDepth Architecture Overview
+            The FlexiDepth layer. Left: Full-processing path where hidden states undergo the pre-trained attention and FFN modules. Right: Skipping path where hidden states bypass the attention module and are processed by a lightweight adapter. The router and adapter (in red) are the only trainable components within the FlexiDepth Block.
           </figcaption>
         </figure>
       </div>
