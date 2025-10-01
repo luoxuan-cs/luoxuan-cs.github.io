@@ -35,7 +35,7 @@ I am a PhD student at UC Santa Barbara. My current research is mainly about effi
     </div>
   </div>
   <div class="pub-item">
-    <div class="pub-title"><a href="/publication/2025-diffskip">DiffSkip: Differential Layer Skipping in Large Language Models</a></div>
+    <div class="pub-title">DiffSkip: Differential Layer Skipping in Large Language Models</div>
     <div class="pub-authors">Xuan Luo, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">Findings of the Association for Computational Linguistics, 2025</div>
     <div class="pub-buttons">
