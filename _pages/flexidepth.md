@@ -120,8 +120,8 @@ permalink: /flexidepth/
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <figure>
-          <img src="/images/flexidepth/fig1.png" alt="Layer-skipping patterns">
-          <figcaption class="has-text-centered" style="margin-top: 1rem; font-size: 1.1rem;">
+          <img src="/images/flexidepth/fig1.png" alt="Layer-skipping patterns" style="max-width: 100%;">
+          <figcaption class="has-text-centered" style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.5;">
             Layer-skipping patterns (Llama-3-8B-Instruct) for a language task (left) and a math task (right). The light-to-dark blue gradient represents layer usage from 16 to 32.
           </figcaption>
         </figure>
