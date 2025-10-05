@@ -47,6 +47,10 @@ permalink: /flexidepth/
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Adaptive Layer-skipping in Pre-trained LLMs</h1>
           
+          <div class="notification is-info" style="margin-bottom: 2rem;">
+            <strong>News:</strong> We have updated our training method for improved results! For details about the updated training method and datasets, please refer to our <a href="https://github.com/luoxuan-cs/Flexidepth">github</a> & <a href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct">huggingface</a> repo.
+          </div>
+          
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://luoxuan-cs.github.io/">Xuan Luo</a><sup>1</sup>,&nbsp;&nbsp;
@@ -76,7 +80,7 @@ permalink: /flexidepth/
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/luoxuan-cs/Flexidepth" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -195,13 +199,14 @@ permalink: /flexidepth/
         </figcaption>
         <div class="content has-text-justified" style="margin-top: 2rem;">
           <p>
-            Furthermore, we evaluated the performance of FlexiDepth with varying layer-skipping penalty coefficients (alpha). A larger alpha value encourages the model to skip more layers. This trade-off between skipping layers and maintaining performance is illustrated in the following figure.
+            We compared our model with other models to evaluate performance.
           </p>
         </div>
         <figure>
           <img src="/images/flexidepth/fig5.png" alt="Influence of Alpha for Layer Skipping" style="width: 70%;">
           <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
-            The influence of the coefficient α for layer skipping
+            Performance comparison based on Llama-3-8B-Instruct, which consists of 32 layers.<br>
+            Retain % represents the percentage of average retained benchmark performance
           </figcaption>
         </figure>
       </div>
