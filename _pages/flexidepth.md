@@ -203,7 +203,7 @@ permalink: /flexidepth/
           </p>
         </div>
         <figure>
-          <img src="/images/flexidepth/fig5.png" alt="Influence of Alpha for Layer Skipping" style="width: 70%;">
+          <img src="/images/flexidepth/fig6.png" alt="Influence of Alpha for Layer Skipping" style="width: 70%;">
           <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
             Performance comparison based on Llama-3-8B-Instruct, which consists of 32 layers.<br>
             Retain % represents the percentage of average retained benchmark performance
