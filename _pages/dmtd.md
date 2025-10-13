@@ -131,12 +131,31 @@ permalink: /dmtd/
         <figure>
           <img src="/images/dmtd/fig1.png" alt="DMTD Architecture" style="width: 100%;">
           <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
-            Figure 1: Vanilla next token prediction vs. Direct Multi-Token Decoding.
+            Vanilla next token prediction vs. Direct Multi-Token Decoding.
           </figcaption>
         </figure>
       </div>
     </div>
     <!--/ Architecture. -->
+
+    <!-- Scaling with Training Data. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Scaling with Training Data</h2>
+        <div class="content has-text-justified">
+          <p>
+            The results reveal a consistent decrease in cross-entropy loss as training data increases for all model sizes, with the trends approximating log-linear relationships. Our current training uses only 1.5B tokens. With large-scale continued pre-training, the performance of our method is expected to improve significantly.
+          </p>
+        </div>
+        <figure>
+          <img src="/images/dmtd/fig2.png" alt="Scaling Law" style="width: 70%;">
+          <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
+            Scaling law of the proposed Direct Multi-token Decoding. The x-axis represents the number of training tokens (in billions) on a logarithmic scale, while the y-axis shows the cross-entropy loss.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--/ Scaling with Training Data. -->
 
     <!-- Placeholder for future content -->
     <div class="columns is-centered has-text-centered">
