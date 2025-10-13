@@ -112,7 +112,7 @@ permalink: /dmtd/
         <h2 class="title is-3">Main Idea</h2>
         <div class="content has-text-justified">
           <p>
-            In our previous work <a href="/flexidepth/">FlexiDepth</a>, we discovered that pre-trained large language models contain redundancy, as many layers can be skipped without affecting performance. However, these layer-skipping patterns are irregular and difficult to accelerate in memory-bound scenarios. DMTD cyclically reuses the late layers to efficiently generate multiple tokens, repurposing underutilized computations in pre-trained LLMs without introducing additional components, adapters, or post-processing routines.
+            In our previous work <a href="/flexidepth/">FlexiDepth</a>, we discovered that pre-trained large language models contain redundancy, as many layers can be skipped without affecting performance. However, these layer-skipping patterns are irregular and difficult to provide acceleration in memory-bound scenarios. DMTD repurposes this redundancy into a regular pattern by cyclically reusing the late layers to efficiently generate multiple tokens. <strong>Importantly, DMTD introduces no additional parameters, auxiliary routines, or post-generation verification like speculative decoding.</strong>
           </p>
         </div>
       </div>
