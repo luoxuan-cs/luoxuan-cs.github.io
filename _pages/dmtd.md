@@ -129,7 +129,7 @@ permalink: /dmtd/
           </p>
         </div>
         <figure>
-          <img src="/images/dmtd/fig1.png" alt="DMTD Architecture" style="width: 100%;">
+          <img src="/images/dmtd/fig1.png" alt="DMTD Architecture" style="width: 70%;">
           <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
             Vanilla next token prediction vs. Direct Multi-Token Decoding.
           </figcaption>
@@ -148,7 +148,7 @@ permalink: /dmtd/
           </p>
         </div>
         <figure>
-          <img src="/images/dmtd/fig2.png" alt="Scaling Law" style="width: 70%;">
+          <img src="/images/dmtd/fig2.png" alt="Scaling Law" style="width: 60%;">
           <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
             Scaling law of the proposed Direct Multi-token Decoding. The x-axis represents the number of training tokens (in billions) on a logarithmic scale, while the y-axis shows the cross-entropy loss.
           </figcaption>
