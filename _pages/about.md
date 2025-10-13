@@ -11,6 +11,23 @@ I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.e
 ## Selected publications
 
 <div class="pubs">
+  <div class="pub-year">Preprint</div>
+  <div class="pub-item">
+    <div class="pub-title"><a href="/dmtd/">Direct Multi-Token Decoding</a></div>
+    <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
+    <div class="pub-venue">Preprint</div>
+    <div class="pub-buttons">
+      <span class="btn-popover">
+        <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
+        <div class="popover">
+          Decoder-only transformers have become the standard architecture for large language models (LLMs) due to their strong  performance. Recent studies suggest that, in pre-trained LLMs, early, middle, and late layers may serve distinct roles: Early layers focus on understanding the input context, middle layers handle task-specific processing, and late layers convert abstract representations into output tokens.  We hypothesize that once representations have been processed by the early and middle layers, the resulting hidden states may encapsulate sufficient information to support the generation of multiple tokens using only the late layers, eliminating the need to repeatedly traverse the early and middle layers. We refer to this inference paradigm as Direct Multi-Token Decoding (DMTD). Unlike speculative decoding, our method introduces no additional parameters, auxiliary routines, or post-generation verification. Despite being trained on a limited dataset, a fine-tuned DMTD Qwen3-4B model has already demonstrated promising results, achieving up to a 2× speedup with only minor performance loss. Moreover, as shown in our scaling analysis, its performance is expected to further improve with larger training datasets.
+        </div>
+      </span>
+      <a class="btn-tag" href="/images/dmtd/DMTD_arxiv.pdf">PDF</a>
+      <a class="btn-tag" href="https://github.com/luoxuan-cs/Direct-Multitoken-Decoding">CODE</a>
+      <a class="btn-tag" href="/dmtd/">WEBSITE</a>
+    </div>
+  </div>
   <div class="pub-year">2025</div>
   <div class="pub-item">
     <div class="pub-title"><a href="/flexidepth/">Adaptive Layer-skipping in Pre-trained LLMs</a></div>
