@@ -157,6 +157,36 @@ permalink: /dmtd/
     </div>
     <!--/ Scaling with Training Data. -->
 
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate our method by reusing the last 8 layers of Qwen3-4B, where MTDx denotes decoding x tokens per cycle (cycle length). As shown in the figure below, our method performs well with cycle lengths up to MTD4.
+          </p>
+        </div>
+        <figure>
+          <img src="/images/dmtd/fig3.png" alt="Throughput Comparison" style="width: 80%;">
+          <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
+            Throughput (tokens per second) comparison of our method and Qwen3-4B.
+          </figcaption>
+        </figure>
+        <figure style="margin-top: 2rem;">
+          <img src="/images/dmtd/fig4.png" alt="Speedup Comparison" style="width: 80%;">
+          <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
+            Speedup comparison.
+          </figcaption>
+        </figure>
+        <div class="content has-text-justified" style="margin-top: 2rem;">
+          <p>
+            Our method achieves up to 2× speedup when generating 4 tokens per cycle. <strong>Importantly, our method does not rely on speculative decoding and is orthogonal to such techniques</strong>, meaning it can potentially be combined with speculative decoding methods for further performance improvements.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Results. -->
+
     <!-- Placeholder for future content -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
