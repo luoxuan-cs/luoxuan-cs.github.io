@@ -144,7 +144,7 @@ permalink: /dmtd/
         <h2 class="title is-3">Scaling with Training Data</h2>
         <div class="content has-text-justified">
           <p>
-            The results reveal a consistent decrease in cross-entropy loss as training data increases for all model sizes, with the trends approximating log-linear relationships. Our current training uses only 1.5B tokens. With large-scale continued pre-training, the performance of our method is expected to improve significantly.
+            We conducted scaling experiments to understand how DMTD's performance improves with increasing training data across different model sizes (0.5B, 1.5B, 3B, 7B, and 14B parameters). The results reveal a consistent decrease in cross-entropy loss as training data increases for all model sizes, with the trends approximating log-linear relationships. Our current training uses only 1.5B tokens. With large-scale continued pre-training, the performance of our method is expected to improve significantly, potentially enabling each cycle to decode more tokens efficiently.
           </p>
         </div>
         <figure>
