@@ -11,7 +11,7 @@ I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.e
 ## Selected publications
 
 <div class="pubs">
-  <div class="pub-year">Preprint</div>
+  <div class="pub-year">2025</div>
   <div class="pub-item">
     <div class="pub-title"><a href="/dmtd/">Direct Multi-Token Decoding</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
@@ -28,7 +28,6 @@ I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.e
       <a class="btn-tag" href="/dmtd/">WEBSITE</a>
     </div>
   </div>
-  <div class="pub-year">2025</div>
   <div class="pub-item">
     <div class="pub-title"><a href="/flexidepth/">Adaptive Layer-skipping in Pre-trained LLMs</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
