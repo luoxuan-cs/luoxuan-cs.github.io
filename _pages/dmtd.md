@@ -119,6 +119,25 @@ permalink: /dmtd/
     </div>
     <!--/ Main Idea. -->
 
+    <!-- Architecture. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            Unlike the vanilla decoder-only transformer that generates tokens one by one through full forward passes, the proposed DMTD operates in fixed multi-token cycles. Figure 1 (right) demonstrates the generation pipeline of DMTD in a single cycle. DMTD performs only one full forward pass at the beginning of the cycle and then reuses the later layers to decode multiple tokens consecutively. This cycle-based setting transforms the irregular computational redundancies observed in pre-trained LLMs into a fixed periodical pattern for efficient decoding.
+          </p>
+        </div>
+        <figure>
+          <img src="/images/dmtd/fig1.png" alt="DMTD Architecture" style="width: 100%;">
+          <figcaption class="has-text-centered is-size-6" style="margin-top: 1rem;">
+            Figure 1: Vanilla next token prediction vs. Direct Multi-Token Decoding.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--/ Architecture. -->
+
     <!-- Placeholder for future content -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
