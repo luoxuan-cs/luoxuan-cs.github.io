@@ -47,8 +47,12 @@ permalink: /flexidepth/
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Adaptive Layer-skipping in Pre-trained LLMs</h1>
           
-          <div class="notification is-info" style="margin-bottom: 2rem;">
+          <div class="notification is-info" style="margin-bottom: 1rem;">
             <strong>News:</strong> We have updated our training method for improved results! For details about the updated training method and datasets, please refer to our <a href="https://github.com/luoxuan-cs/Flexidepth">github</a> & <a href="https://huggingface.co/xuan-luo/FlexiDepth-Llama-3-8B-Instruct">huggingface</a> repo.
+          </div>
+          
+          <div class="notification is-success" style="margin-bottom: 2rem;">
+            <strong>News:</strong> We find that the underutilized capacity in LLMs can be repurposed for multi-token decoding! Check out our new work: <a href="https://luoxuan-cs.github.io/dmtd/">Direct Multi-Token Decoding</a>.
           </div>
           
           <div class="is-size-5 publication-authors">
