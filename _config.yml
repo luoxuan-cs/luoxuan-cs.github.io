@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Xuan Luo"
 title_separator          : "-"
 name                     : &name "Xuan Luo (罗炫)"
-description              : &description "PhD student at UC Santa Barbara. Efficient LLMs and generative models."
+description              : &description "PhD student at UC Santa Barbara. Efficient inference and efficient large language models."
 url                      : https://luoxuan-cs.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Xuan Luo (罗炫)"
   pronouns         : 
-  bio              : "I am a PhD student at UC Santa Barbara. My current research is mainly about efficient large language models and applications of generative models."
+  bio              : "I am a PhD student at UC Santa Barbara. My research focuses on efficient inference and efficient large language models."
   location         : 
   employer         : "UC Santa Barbara"
   uri              : 

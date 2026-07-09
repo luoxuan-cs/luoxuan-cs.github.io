@@ -6,16 +6,19 @@ author_profile: true
 
 xuan_luo AT ucsb DOT edu / [GitHub](https://github.com/luoxuan-cs) / [Google Scholar](https://scholar.google.com/citations?user=z5pKzAcAAAAJ&hl) / [Hugging Face](https://huggingface.co/xuan-luo) / [CV](/images/cv/CV-XuanLuo.pdf)
 
-I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/) in University of California Santa Barbara. My current research is mainly about efficient large language models and applications of generative models.
+I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/) at University of California Santa Barbara. My research focuses on efficient inference and efficient large language models.
 
 ## Selected publications
 
 <div class="pubs">
-  <div class="pub-year">2025</div>
+  <div class="pub-year">2026</div>
   <div class="pub-item">
     <div class="pub-title"><a href="/dmtd/">Direct Multi-Token Decoding</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
-    <div class="pub-venue">Preprint</div>
+    <div class="pub-venue">COLM 2026</div>
+    <ul class="pub-related">
+      <li>Related talk: Prof. Xifeng Yan, talks on efficient inference for large language models at NVIDIA Research, UIUC, UC Riverside, and UCLA based in part on this work.</li>
+    </ul>
     <div class="pub-buttons">
       <span class="btn-popover">
         <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
@@ -25,14 +28,43 @@ I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.e
       </span>
       <a class="btn-tag" href="/images/dmtd/DMTD_arxiv.pdf">PDF</a>
       <a class="btn-tag" href="https://github.com/luoxuan-cs/Direct-Multitoken-Decoding">CODE</a>
+      <a class="btn-tag" href="https://huggingface.co/xuan-luo/DMTD-Qwen3-4B">MODEL</a>
       <a class="btn-tag" href="/dmtd/">WEBSITE</a>
     </div>
   </div>
+  <div class="pub-item">
+    <div class="pub-title">Learning When Not to Attend Globally</div>
+    <div class="pub-authors"><strong>Xuan Luo</strong>, Jiaming Shan, Wesley Truong, Kailai Zhang, Hanzhe Zhang, Xifeng Yan</div>
+    <div class="pub-venue">Under review; positive feedback</div>
+    <ul class="pub-related">
+      <li>Related talk: Prof. Xifeng Yan, talks on context-adaptive efficient attention at UIUC, UC Riverside, and UCLA based in part on this work.</li>
+    </ul>
+    <div class="pub-buttons">
+      <a class="btn-tag" href="https://arxiv.org/abs/2512.22562">PREPRINT</a>
+    </div>
+  </div>
+  <div class="pub-item">
+    <div class="pub-title">Dual Dimensionality for Local and Global Attention</div>
+    <div class="pub-authors">Zhiyuan Wang, <strong>Xuan Luo</strong>, Sirui Zeng, Xifeng Yan</div>
+    <div class="pub-venue">Preprint</div>
+    <div class="pub-buttons">
+      <a class="btn-tag" href="https://arxiv.org/abs/2606.18587">PREPRINT</a>
+    </div>
+  </div>
+  <div class="pub-item">
+    <div class="pub-title">Token-Adaptive Representation for Attention</div>
+    <div class="pub-authors">Zhiyuan Wang, <strong>Xuan Luo</strong>, Xifeng Yan</div>
+    <div class="pub-venue">Under review; positive feedback</div>
+  </div>
+  <div class="pub-year">2025</div>
   <div class="pub-item">
     <div class="pub-title"><a href="/flexidepth/">Adaptive Layer-skipping in Pre-trained LLMs</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">COLM 2025</div>
     <div class="pub-oral">Oral Presentation</div>
+    <ul class="pub-related">
+      <li>Related talk: Prof. Xifeng Yan, talks on adaptive layer-skipping for efficient LLM inference at IROS 2025, NVIDIA Research, UIUC, UC Riverside, and UCLA based in part on this work.</li>
+    </ul>
     <div class="pub-buttons">
       <span class="btn-popover">
         <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
@@ -110,3 +142,28 @@ I'm a 3rd year PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.e
     </div>
   </div>
 </div>
+
+## Experience
+
+<div class="pubs">
+  <div class="pub-item">
+    <div class="pub-title">Research Scientist Intern, TikTok</div>
+    <div class="pub-authors">San Jose, CA</div>
+    <div class="pub-venue">Jun 2026 - Sep 2026</div>
+    <ul class="pub-related">
+      <li>Recommendation LLMs, reinforcement learning, and GenAI; large-scale pre-training for Recommendation-LLMs, including training acceleration and MoE model optimization.</li>
+    </ul>
+  </div>
+  <div class="pub-item">
+    <div class="pub-title">Lead Developer / AI Researcher, BioPACIFIC MIP (NSF Materials Innovation Platform)</div>
+    <div class="pub-authors">University of California Santa Barbara</div>
+    <div class="pub-venue">Apr 2025 - Jun 2026</div>
+    <ul class="pub-related">
+      <li>Full-stack developed a domain-specific AI system for scientific literature analysis and experimental result synthesis, and optimized the agent system for production deployment.</li>
+    </ul>
+  </div>
+</div>
+
+## Professional Services
+
+Reviewer: COLM 2026, COLM 2025, NeurIPS 2024, ACCV 2022.
