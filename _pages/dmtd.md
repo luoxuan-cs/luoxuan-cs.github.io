@@ -83,6 +83,15 @@ permalink: /dmtd/
                   <span>Code</span>
                 </a>
               </span>
+              <!-- Model Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/xuan-luo/DMTD-Qwen3-4B" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    🤗
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -113,6 +122,9 @@ permalink: /dmtd/
         <div class="content has-text-justified">
           <p>
             In our previous work <a href="/flexidepth/">FlexiDepth</a>, we discovered that pre-trained large language models contain redundancy, as many layers can be skipped without affecting performance. However, these layer-skipping patterns are irregular and difficult to provide acceleration in memory-bound scenarios. DMTD repurposes this redundancy into a regular pattern by cyclically reusing the late layers to efficiently generate multiple tokens. <strong>Importantly, DMTD introduces no additional parameters, auxiliary routines, or post-generation verification like speculative decoding.</strong>
+          </p>
+          <p>
+            DMTD is also compatible with speculative decoding. Since a DMTD model can generate several tokens in one cycle, it can serve as its own fast drafter and then verify the drafted tokens with the full DMTD model. We provide a <a href="https://huggingface.co/xuan-luo/DMTD-Qwen3-4B">DMTD Qwen3-4B model</a> with several decoding variants, including DMTD, DMTD with speculative decoding, tree speculative decoding, and Medusa-style tree speculative decoding.
           </p>
         </div>
       </div>
@@ -174,7 +186,7 @@ permalink: /dmtd/
         </figure>
         <div class="content has-text-justified" style="margin-top: 2rem;">
           <p>
-            Our method achieves up to 2× speedup when generating 4 tokens per cycle. Importantly, our method does not rely on speculative decoding and is orthogonal to such techniques. It can be compatible with methods like speculative decoding, but for simplicity, we only present the plain results here.
+            Our method achieves up to 2× speedup when generating 4 tokens per cycle. Importantly, DMTD does not rely on speculative decoding, but it is orthogonal and complementary to speculative decoding techniques. The plain DMTD results shown here can therefore be further combined with self-speculative variants implemented in the released model.
           </p>
         </div>
         <figure style="margin-top: 2rem;">
