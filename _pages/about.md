@@ -16,9 +16,6 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
     <div class="pub-title"><a href="/dmtd/">Direct Multi-Token Decoding</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">COLM 2026</div>
-    <ul class="pub-related">
-      <li>Related talk: Prof. Xifeng Yan, talks on efficient inference for large language models at NVIDIA Research, UIUC, UC Riverside, and UCLA based in part on this work.</li>
-    </ul>
     <div class="pub-buttons">
       <span class="btn-popover">
         <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
@@ -36,9 +33,6 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
     <div class="pub-title">Learning When Not to Attend Globally</div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Jiaming Shan, Wesley Truong, Kailai Zhang, Hanzhe Zhang, Xifeng Yan</div>
     <div class="pub-venue">Under review; positive feedback</div>
-    <ul class="pub-related">
-      <li>Related talk: Prof. Xifeng Yan, talks on context-adaptive efficient attention at UIUC, UC Riverside, and UCLA based in part on this work.</li>
-    </ul>
     <div class="pub-buttons">
       <a class="btn-tag" href="https://arxiv.org/abs/2512.22562">PREPRINT</a>
     </div>
@@ -62,9 +56,6 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">COLM 2025</div>
     <div class="pub-oral">Oral Presentation</div>
-    <ul class="pub-related">
-      <li>Related talk: Prof. Xifeng Yan, talks on adaptive layer-skipping for efficient LLM inference at IROS 2025, NVIDIA Research, UIUC, UC Riverside, and UCLA based in part on this work.</li>
-    </ul>
     <div class="pub-buttons">
       <span class="btn-popover">
         <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
