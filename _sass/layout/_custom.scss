@@ -55,9 +55,16 @@
 }
 
 .pub-oral {
-  color: #d34a49;
+  color: #17365d;
   font-weight: 700;
   margin-top: 0.15rem;
+}
+
+.pub-summary {
+  max-width: 65ch;
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .pub-related {
@@ -115,4 +122,4 @@
 .btn-popover:hover .popover,
 .btn-popover:focus-within .popover {
   display: block;
-} 
+}

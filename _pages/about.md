@@ -6,7 +6,33 @@ author_profile: true
 
 xuan_luo AT ucsb DOT edu / [GitHub](https://github.com/luoxuan-cs) / [Google Scholar](https://scholar.google.com/citations?user=z5pKzAcAAAAJ&hl) / [Hugging Face](https://huggingface.co/xuan-luo) / [CV](/images/cv/CV-XuanLuo.pdf)
 
-I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/) at University of California Santa Barbara. My research focuses on efficient inference and efficient large language models.
+I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/) at University of California Santa Barbara. I develop **adaptive and efficient language models** through:
+
+- Adaptive computation in LLMs ([FlexiDepth](/flexidepth/), [DiffSkip](https://aclanthology.org/2025.findings-acl.377.pdf), TAR).
+- Efficient Attention Mechanisms (KVPath, [AHA](https://arxiv.org/abs/2512.22562), [DAR](https://arxiv.org/abs/2606.18587)).
+- Verification-free multi-token prediction ([DMTD](/dmtd/)).
+
+## Manuscripts
+
+<div class="pubs">
+  <div class="pub-year">2026</div>
+  <div class="pub-item">
+    <div class="pub-title">KVPath: Connecting Key-Value Representations Across Transformer Layers</div>
+    <div class="pub-authors"><strong>Xuan Luo</strong>, Zhiyuan Wang, Hanzhong Cao, Xifeng Yan</div>
+    <div class="pub-summary">Connects KV representations across layers, reducing KV cache by 37.5% relative to MLA while improving performance.</div>
+  </div>
+  <div class="pub-item">
+    <div class="pub-title">Learning When Not to Attend Globally</div>
+    <div class="pub-authors"><strong>Xuan Luo</strong>, Jiaming Shan, Wesley Truong, Kailai Zhang, Hanzhe Zhang, Xifeng Yan</div>
+    <div class="pub-buttons">
+      <a class="btn-tag" href="https://arxiv.org/abs/2512.22562">PDF</a>
+    </div>
+  </div>
+  <div class="pub-item">
+    <div class="pub-title">Token-Adaptive Representation for Attention</div>
+    <div class="pub-authors">Zhiyuan Wang, <strong>Xuan Luo</strong>, Xifeng Yan</div>
+  </div>
+</div>
 
 ## Selected publications
 
@@ -16,6 +42,7 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
     <div class="pub-title"><a href="/dmtd/">Direct Multi-Token Decoding</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">COLM 2026</div>
+    <div class="pub-summary">Enables multi-token prediction without extra parameters, extra computation, or speculative decoding.</div>
     <div class="pub-buttons">
       <span class="btn-popover">
         <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
@@ -23,39 +50,28 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
           Decoder-only transformers have become the standard architecture for large language models (LLMs) due to their strong  performance. Recent studies suggest that, in pre-trained LLMs, early, middle, and late layers may serve distinct roles: Early layers focus on understanding the input context, middle layers handle task-specific processing, and late layers convert abstract representations into output tokens.  We hypothesize that once representations have been processed by the early and middle layers, the resulting hidden states may encapsulate sufficient information to support the generation of multiple tokens using only the late layers, eliminating the need to repeatedly traverse the early and middle layers. We refer to this inference paradigm as Direct Multi-Token Decoding (DMTD). Unlike speculative decoding, our method introduces no additional parameters, auxiliary routines, or post-generation verification. Despite being trained on a limited dataset, a fine-tuned DMTD Qwen3-4B model has already demonstrated promising results, achieving up to a 2× speedup with only minor performance loss. Moreover, as shown in our scaling analysis, its performance is expected to further improve with larger training datasets.
         </div>
       </span>
-      <a class="btn-tag" href="/images/dmtd/DMTD_arxiv.pdf">PDF</a>
+      <a class="btn-tag" href="https://openreview.net/pdf?id=gdo9Cv6rL3">PDF</a>
       <a class="btn-tag" href="https://github.com/luoxuan-cs/Direct-Multitoken-Decoding">CODE</a>
       <a class="btn-tag" href="https://huggingface.co/xuan-luo/DMTD-Qwen3-4B">MODEL</a>
       <a class="btn-tag" href="/dmtd/">WEBSITE</a>
     </div>
   </div>
   <div class="pub-item">
-    <div class="pub-title">Learning When Not to Attend Globally</div>
-    <div class="pub-authors"><strong>Xuan Luo</strong>, Jiaming Shan, Wesley Truong, Kailai Zhang, Hanzhe Zhang, Xifeng Yan</div>
-    <div class="pub-venue">Under review; positive feedback</div>
-    <div class="pub-buttons">
-      <a class="btn-tag" href="https://arxiv.org/abs/2512.22562">PREPRINT</a>
-    </div>
-  </div>
-  <div class="pub-item">
     <div class="pub-title">Dual Dimensionality for Local and Global Attention</div>
     <div class="pub-authors">Zhiyuan Wang, <strong>Xuan Luo</strong>, Sirui Zeng, Xifeng Yan</div>
-    <div class="pub-venue">Preprint</div>
+    <div class="pub-venue">NeurIPS 2026</div>
+    <div class="pub-summary">Reduces KV cache by exploiting distinct roles: local KV supports both memory and prediction, while distant KV primarily supports memory.</div>
     <div class="pub-buttons">
-      <a class="btn-tag" href="https://arxiv.org/abs/2606.18587">PREPRINT</a>
+      <a class="btn-tag" href="https://arxiv.org/abs/2606.18587">PDF</a>
     </div>
-  </div>
-  <div class="pub-item">
-    <div class="pub-title">Token-Adaptive Representation for Attention</div>
-    <div class="pub-authors">Zhiyuan Wang, <strong>Xuan Luo</strong>, Xifeng Yan</div>
-    <div class="pub-venue">Under review; positive feedback</div>
   </div>
   <div class="pub-year">2025</div>
   <div class="pub-item">
     <div class="pub-title"><a href="/flexidepth/">Adaptive Layer-skipping in Pre-trained LLMs</a></div>
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">COLM 2025</div>
-    <div class="pub-oral">Oral Presentation</div>
+    <div class="pub-oral">Oral Presentation (top 24/418)</div>
+    <div class="pub-summary">Enables dynamic layer skipping in pre-trained LLMs with near-baseline performance, revealing how computational demands vary across token types.</div>
     <div class="pub-buttons">
       <span class="btn-popover">
         <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
@@ -139,10 +155,10 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
 <div class="pubs">
   <div class="pub-item">
     <div class="pub-title">Research Scientist Intern, TikTok</div>
-    <div class="pub-authors">San Jose, CA</div>
     <div class="pub-venue">Jun 2026 - Sep 2026</div>
     <ul class="pub-related">
-      <li>Recommendation LLMs, reinforcement learning, and GenAI; large-scale pre-training for Recommendation-LLMs, including training acceleration and MoE model optimization.</li>
+      <li>Replaced standard attention with MLA in billion-scale recommendation LLMs; implemented and optimized the Triton kernel, reducing training memory usage by 42%.</li>
+      <li>Stabilized the Muon optimizer to enable reliable convergence in training.</li>
     </ul>
   </div>
   <div class="pub-item">
