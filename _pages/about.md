@@ -161,14 +161,6 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
       <li>Stabilized the Muon optimizer to enable reliable convergence in training.</li>
     </ul>
   </div>
-  <div class="pub-item">
-    <div class="pub-title">Lead Developer / AI Researcher, BioPACIFIC MIP (NSF Materials Innovation Platform)</div>
-    <div class="pub-authors">University of California Santa Barbara</div>
-    <div class="pub-venue">Apr 2025 - Jun 2026</div>
-    <ul class="pub-related">
-      <li>Full-stack developed a domain-specific AI system for scientific literature analysis and experimental result synthesis, and optimized the agent system for production deployment.</li>
-    </ul>
-  </div>
 </div>
 
 ## Professional Services
