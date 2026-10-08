@@ -60,7 +60,7 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
     <div class="pub-title">Dual Dimensionality for Local and Global Attention</div>
     <div class="pub-authors">Zhiyuan Wang, <strong>Xuan Luo</strong>, Sirui Zeng, Xifeng Yan</div>
     <div class="pub-venue">NeurIPS 2026</div>
-    <div class="pub-summary">Local KV supports both memory and prediction, while distant KV’s role is largely confined to memory, allowing reduced KV dimensionality with negligible performance loss.</div>
+    <div class="pub-summary">Local KV supports both memory and prediction, while distant KV primarily serves as memory, allowing reduced KV dimensionality for distant tokens with minimal performance loss.</div>
     <div class="pub-buttons">
       <a class="btn-tag" href="https://arxiv.org/abs/2606.18587">PDF</a>
     </div>
