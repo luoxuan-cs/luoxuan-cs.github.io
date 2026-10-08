@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Looped Transformers, DMTD, and adaptive computation</title>
+  <desc id="desc">Looped Transformers refine hidden states n times before one token. DMTD uses one full-depth pass for n successive tokens, with late-layer decoding and KV refill at cycle boundaries. A future adaptive approach could jointly vary latent computation and token count.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#526174"/></marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #203047; }
+      .heading { font-size: 21px; font-weight: 700; }
+      .label { font-size: 18px; }
+      .note { font-size: 16px; fill: #526174; }
+      .flow { fill: none; stroke: #526174; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="960" height="540" rx="16" fill="#ffffff"/>
+  <rect x="12" y="12" width="936" height="158" rx="12" fill="#f0f5ff"/>
+  <rect x="12" y="186" width="936" height="166" rx="12" fill="#eff9f5"/>
+  <rect x="12" y="368" width="936" height="160" rx="12" fill="#f7f3fc"/>
+
+  <text x="34" y="52" class="heading">Looped Transformers</text>
+  <text x="34" y="83" class="label">Loop n times</text>
+  <text x="34" y="111" class="note">Latent refinement per token</text>
+  <rect x="344" y="76" width="200" height="52" rx="8" fill="#d9e6ff" stroke="#7698d4"/>
+  <text x="444" y="108" text-anchor="middle" class="label">Recurrent block</text>
+  <path d="M 490 76 V 45 H 396 V 72" class="flow"/>
+  <text x="564" y="52" class="note">Refine hidden states × n</text>
+  <path d="M 544 102 H 706" class="flow"/>
+  <rect x="718" y="76" width="192" height="52" rx="8" fill="#fff" stroke="#7698d4"/>
+  <text x="814" y="108" text-anchor="middle" class="label">1 output token</text>
+
+  <text x="34" y="228" class="heading">DMTD</text>
+  <text x="34" y="259" class="label">Loop 1/n times</text>
+  <text x="34" y="287" class="note">Full-depth passes per token</text>
+  <text x="34" y="311" class="note">on average</text>
+  <rect x="314" y="237" width="165" height="52" rx="8" fill="#d6eee3" stroke="#67a38a"/>
+  <text x="396" y="269" text-anchor="middle" class="label">Full-depth pass</text>
+  <path d="M 479 263 H 510" class="flow"/>
+  <rect x="521" y="237" width="166" height="52" rx="8" fill="#d6eee3" stroke="#67a38a"/>
+  <text x="604" y="269" text-anchor="middle" class="label">Late-layer decoding</text>
+  <path d="M 650 237 V 213 H 558 V 233" class="flow"/>
+  <path d="M 687 263 H 715" class="flow"/>
+  <rect x="726" y="237" width="184" height="52" rx="8" fill="#fff" stroke="#67a38a"/>
+  <text x="818" y="269" text-anchor="middle" class="label">n successive tokens</text>
+  <path d="M 819 290 V 325 H 397 V 293" class="flow"/>
+  <text x="604" y="316" text-anchor="middle" class="note">Cycle boundary: refill missing KV entries</text>
+
+  <text x="34" y="410" class="heading">Adaptive</text>
+  <text x="34" y="441" class="label">Jointly adapt both</text>
+  <text x="34" y="469" class="note">Future direction</text>
+  <rect x="314" y="409" width="247" height="65" rx="8" fill="#eae0f5" stroke="#a185bc"/>
+  <text x="437" y="436" text-anchor="middle" class="label">How much latent</text>
+  <text x="437" y="460" text-anchor="middle" class="label">computation?</text>
+  <path d="M 576 442 H 625" class="flow" marker-start="url(#arrow)"/>
+  <rect x="642" y="409" width="268" height="65" rx="8" fill="#eae0f5" stroke="#a185bc"/>
+  <text x="776" y="436" text-anchor="middle" class="label">How many tokens between</text>
+  <text x="776" y="460" text-anchor="middle" class="label">full-depth updates?</text>
+  <text x="612" y="504" text-anchor="middle" class="note">Vary computation depth and generation length together</text>
+</svg>
