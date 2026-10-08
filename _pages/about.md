@@ -12,6 +12,8 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
 - Efficient Attention Mechanisms (KVPath, [AHA](https://arxiv.org/abs/2512.22562), [DAR](https://arxiv.org/abs/2606.18587)).
 - Verification-free multi-token prediction ([DMTD](/dmtd/)).
 
+**I am seeking full-time Research Scientist positions**, with a focus on efficient language models and efficient attention mechanism. Please feel free to reach out if you see a potential fit!
+
 ## Manuscripts
 
 <div class="pubs">
