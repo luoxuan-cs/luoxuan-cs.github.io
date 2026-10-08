@@ -60,7 +60,7 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
     <div class="pub-title">Dual Dimensionality for Local and Global Attention</div>
     <div class="pub-authors">Zhiyuan Wang, <strong>Xuan Luo</strong>, Sirui Zeng, Xifeng Yan</div>
     <div class="pub-venue">NeurIPS 2026</div>
-    <div class="pub-summary">Reduces KV cache by exploiting distinct roles: local KV supports both memory and prediction, while distant KV primarily supports memory.</div>
+    <div class="pub-summary">Local KV supports both memory and prediction, while distant KV’s role is largely confined to memory, allowing reduced KV dimensionality with negligible performance loss.</div>
     <div class="pub-buttons">
       <a class="btn-tag" href="https://arxiv.org/abs/2606.18587">PDF</a>
     </div>
@@ -71,7 +71,7 @@ I'm a PhD student advised by Prof. [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/
     <div class="pub-authors"><strong>Xuan Luo</strong>, Weizhi Wang, Xifeng Yan</div>
     <div class="pub-venue">COLM 2025</div>
     <div class="pub-oral">Oral Presentation (top 24/418)</div>
-    <div class="pub-summary">Enables dynamic layer skipping in pre-trained LLMs with near-baseline performance, revealing how computational demands vary across token types.</div>
+    <div class="pub-summary">Enables dynamic layer skipping in pre-trained LLMs while retaining full benchmark performance, revealing how computational demands vary across token types.</div>
     <div class="pub-buttons">
       <span class="btn-popover">
         <a class="btn-tag" href="#" onclick="return false;">ABSTRACT</a>
